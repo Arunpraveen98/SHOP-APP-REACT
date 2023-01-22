@@ -2,37 +2,315 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/903/522/412/simple-background-textured-digital-art-texture-wallpaper-preview.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cart {
+  display: inline;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: larger;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  background-color: rgba(81, 82, 77, 0.852);
+  position: fixed;
+  right: 6px;
+  top: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.cart-icon {
+  color: rgba(71, 234, 243, 0.925);
+  font-size: 30px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  top: 8px;
+}
+.bag {
+  color: rgb(216, 205, 44);
+  position: relative;
+  top: 20px;
+}
+.plus {
+  font-size: 15px;
+  color: rgb(123, 247, 46);
+  position: relative;
+  top: 4px;
+}
+
+.count {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 3px;
+  margin-right: 5px;
+  background-color: rgb(95, 255, 47);
+  color: rgb(10, 10, 10);
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 40%;
+  position: relative;
+  bottom: 13px;
+}
+
+.container {
+  display: inline-flex;
+  text-align: center;
+  margin: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.cards {
+  height: 450px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  border: 0.5px rgba(0, 0, 0, 0.632);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.img-size {
+  width: 280px;
+  height: 180px;
+  border-radius: 10px;
+  margin-top: 8px;
+  box-shadow: rgba(26, 25, 25, 0.543) 0px 1px 2px,
+    rgba(26, 25, 25, 0.543) 0px 2px 4px, rgba(26, 25, 25, 0.543) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(26, 25, 25, 0.543) 0px 16px 32px,
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.img-area {
+  background-color: rgba(249, 245, 245, 0.744);
+}
+
+.product-name {
+  background-color: lightcyan;
+  padding: 5px;
+}
+
+.product-price {
+  color: white;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+s {
+  color: #5df53fec;
+  letter-spacing: 1px;
+}
+
+.sale {
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: green;
+  padding: 5px;
+  position: relative;
+  bottom: 170px;
+  left: 100px;
+}
+
+.badge {
+  border-radius: 5px;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-bottom: 3px;
+  letter-spacing: 1px;
+  color: white;
+  background-color: black;
+}
+
+.none {
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.03);
+  font-weight: -100px;
+}
+
+/*------------------------------------------------------ */
+/* Buttons styling */
+
+.remove-btn {
+  color: white;
+  position: relative;
+  top: 100px;
+  left: 83px;
+}
+
+.disable-btn {
+  background-color: rgba(180, 193, 202, 0.995) !important;
+}
+
+.footer {
+  font-weight: bolder;
+  font-size: 1rem;
+  padding: 50px;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lobster", cursive;
+  font-weight: 400;
+  letter-spacing: 1px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 151, 0, 1) 0%,
+    rgba(251, 75, 2, 1) 100%
+  );
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn:before,
+.btn:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgba(251, 75, 2, 1);
+  transition: all 0.3s ease;
+}
+
+.btn:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background: transparent;
+}
+
+.btn:hover:before {
+  height: 100%;
+}
+
+.btn:hover:after {
+  width: 100%;
+}
+
+.btn span:before,
+.btn span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgba(251, 75, 2, 1);
+
+  transition: all 0.3s ease;
+}
+
+.btn span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn span:after {
+  height: 2px;
+  width: 0%;
+}
+
+.btn span:hover:before {
+  height: 100%;
+}
+
+.btn span:hover:after {
+  width: 100%;
+}
+
+.shop {
+  color: rgb(225, 221, 220);
+}
+/*------------------------------------------------------ */
+
+/* Title styling */
+
+strong {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  display: inline-block;
+  border: 4px double rgb(254, 254, 254);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  margin: 20px;
+  width: 40em;
+  background-color: rgba(23, 23, 23, 0.788);
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 4px 8px -2px rgba(
+      213,
+      212,
+      212,
+      0.08
+    ) 08 0px 0px 0px 1px;
+}
+
+strong span {
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: 0.25em 0 0.325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  background: url(https://images.pexels.com/photos/6045281/pexels-photo-6045281.jpeg?auto=compress&cs=tinysrgb&w=400)
+    repeat-x;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 11s linear infinite;
+  animation: aitf 10s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@keyframes aitf {
+  0% {
+    background-position: 0% 50%;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    background-position: 100% 50%;
   }
 }
+
+/*------------------------------------------------------ */
